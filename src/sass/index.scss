@@ -6,9 +6,12 @@
 @import './base/base';
 
 // components styles
+@import './components/section';
+@import './components/container';
 @import './components/logo';
 @import './components/navigation';
 @import './components/buttons';
+@import './components/titles';
 @import './components/subscribe';
 
 // Layout styles
@@ -19,4 +22,3 @@
 @import './layout/customers-say';
 @import './layout/subscribe';
 @import './layout/footer';
-
