@@ -1,0 +1,7 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+.test {
+  color: #FFFFFF;
+  background-color: tomato;
+  padding: 20px;
+  font-size: 24px;
+}/*# sourceMappingURL=index.css.map */
