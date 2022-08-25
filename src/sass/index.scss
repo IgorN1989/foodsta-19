@@ -1,11 +1,21 @@
-@import './common';
-@import './variables';
-@import './header';
-@import './hero';
-@import './offerings';
-@import './favorites';
-@import './customers-say';
-@import './subscribe';
-@import './footer';
+// Utils styles
+@import './utils/variables';
 
+// Base styles
+@import './base/common';
+@import './base/base';
+
+// components styles
+@import './components/logo';
+@import './components/buttons';
+
+// Layout styles
+@import './layout/header';
+@import './layout/navigation';
+@import './layout/hero';
+@import './layout/offerings';
+@import './layout/favorites';
+@import './layout/customers-say';
+@import './layout/subscribe';
+@import './layout/footer';
 
