@@ -1,15 +1,30 @@
-.reviews__section{
-    background-image: url(/src/images/customers/background-mobile1.jpg);
+.customers__section{
+    
     padding-top: 60px;
     padding-bottom: 60px;
 }
-.reviews__title{
-
+.customers__title{
+font-size: 28px;
+line-height: 1.17;
+margin-bottom: 20px;
+}
+.customers__description{
+    margin-bottom: 32px;
 }
 
-
-
-.reviews__svg{
-    fill:#FFE550;
+.customers__item{
+    width: 280px;
+    background-color: white;
+    &:not(:last-child){
+        margin-bottom: 24px;
+    }
+}
+.star__list{
+    display: flex;
+}
+.star__item:not(:last-child){
+    margin-right: 3.45px;
+}
+.star__svg{
     background-color: aqua;
 }
