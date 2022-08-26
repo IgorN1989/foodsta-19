@@ -1,0 +1,12 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<!-- Offerings -->
+<symbol id="icon-bg-offerings-mobile" viewBox="0 0 10 32">
+<path fill="#ffe550" style="fill: var(--color1, #ffe550)" d="M0 1.829c2.59-2.438 7.163-2.438 9.752 0v30.171h-9.752v-30.171z"></path>
+</symbol>
+<!-- Customers -->
+<symbol id="icon-bg-customers-mobile" viewBox="0 0 13 32">
+<path fill="#ffe550" style="fill: var(--color1, #ffe550)" d="M0 0h13.281v32c-3.527-1.66-9.755-1.66-13.281 0v-32z"></path>
+</symbol>
+</defs>
+</svg>
