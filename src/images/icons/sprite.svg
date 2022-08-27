@@ -23,5 +23,7 @@
 <symbol id="icon-customers-background-desc" viewBox="0 0 63 32">
 <path fill="#ffe550" style="fill: var(--color1, #ffe550)" d="M0 29.091c22.677-11.646 50.275 17.005 63.308-7.022v-22.069h-63.308v29.091z"></path>
 </symbol>
+<!-- Header -->
+<symbol id="burger-menu" viewBox="0 0 32 32"><path fill="#7eb101" style="fill:var(--color1, #7eb101)" d="M2.666 8c0-.737.597-1.334 1.334-1.334h24a1.334 1.334 0 1 1 0 2.668H4A1.334 1.334 0 0 1 2.666 8zm0 8.042A1.335 1.335 0 0 1 4 14.709h24l.039-.001a1.334 1.334 0 1 1 0 2.668l-.041-.001H28 4a1.334 1.334 0 0 1-1.334-1.334zM4 22.752a1.334 1.334 0 0 0-.002 2.666H28l.039.001a1.334 1.334 0 1 0 0-2.668l-.041.001H28 4z"/></symbol>
 </defs>
 </svg>

@@ -1,0 +1,28 @@
+.header__container {
+    display: flex;
+    align-items: center;
+}
+
+
+.menu-button {
+@media screen and (min-width: 768px) {
+      display: none;
+    }
+}
+
+.nav__list {
+    @media screen and (min-width: 768px) {
+            flex-direction: row;
+            margin-right: 28px;
+            gap: 28px;
+        }
+}
+
+.nav__link {
+    @media screen and (min-width: 768px) {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            color: #2C2C2C;
+        }
+}
