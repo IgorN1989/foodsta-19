@@ -15,53 +15,39 @@
       aria-controls="mobile-menu"
       data-menu-button
     >
-      <svg width="28" height="28" aria-label="Mobile menu switch">
+      <svg
+        class="menu-button__icon"
+        width="28"
+        height="28"
+        aria-label="Mobile menu switch"
+      >
         <use class="menu-button__icon--cross" href="#"></use>
         <use class="menu-button__icon--menu" href="#"></use>
       </svg>
     </button>
 
-    <!-- Мобильное меню -->
-    <div class="mobile-menu" id="mobile-menu" data-menu>
-      <ul class="mobile-menu__list">
-        <li class="mobile-menu__item">
-          <a class="mobile-menu__link" href="#">Home</a>
-        </li>
-        <li class="mobile-menu__item">
-          <a class="mobile-menu__link" href="#">About</a>
-        </li>
-        <li class="mobile-menu__item">
-          <a class="mobile-menu__link" href="#">Service</a>
-        </li>
-        <li class="mobile-menu__item">
-          <a class="mobile-menu__link" href="#">Menu</a>
-        </li>
-        <li class="mobile-menu__item">
-          <a class="mobile-menu__link" href="#">Contact</a>
-        </li>
-      </ul>
-    </div>
-
     <!-- Меню навигации -->
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__item">
-          <a class="nav__link" href="#">Home</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#">About</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#">Service</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#">Menu</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#">Contact</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="mobile-menu" id="mobile-menu" data-menu>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#">Home</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">About</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Service</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Menu</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
 
     <!-- Кнопка заказа -->
     <button class="order-button" type="button">Order Now</button>
