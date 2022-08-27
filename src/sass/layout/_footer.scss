@@ -1,10 +1,13 @@
 .footer {
   // padding-top: 60px;
   padding-bottom: 60px;
+  // background-color: rgb(123, 79, 225);
 
-  // Тимчасовий фон
-  background-image: url(../images/footer/Group-66.png);
-  background-size: cover;
+  @media screen and (max-width: 767px) {
+    background-image: url(../images/footer/left-apple@mobile_1x.png), url(../images/footer/right-orange@mobile_1x.png), url(../images/footer/bottom-apple-banana@mobile_1x.png);
+    background-repeat: no-repeat;
+    background-position: left 132px, right top, 63% bottom;
+  }
 }
 
 .footer__top {
@@ -28,7 +31,7 @@
     padding-bottom: 10px;
 
     color: var(--black);
-    
+
     transition: color var(--transition);
 
     &:hover,
