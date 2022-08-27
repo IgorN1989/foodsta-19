@@ -1,0 +1,20 @@
+.nav__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav__link {
+  @media screen and (max-width: 1279px) {
+    color: var(--black);
+  }
+
+  @media screen and (min-width: 768px) {
+    transition: color var(--transition);
+
+    &:hover,
+    &:focus {
+      color: var(--button-green);
+      text-decoration-line: underline;
+    }
+  }
+}
