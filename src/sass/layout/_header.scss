@@ -11,6 +11,10 @@
 }
 
 .nav__list {
+    @media screen and (max-width: 767px) {
+            display: none;
+        }
+
     @media screen and (min-width: 768px) {
             flex-direction: row;
             margin-right: 28px;
