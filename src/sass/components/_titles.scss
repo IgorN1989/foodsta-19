@@ -1,6 +1,4 @@
 .section__title {
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 700;
   font-size: 28px;
   line-height: 1.18;
@@ -11,18 +9,12 @@
     line-height: 1.17;
   }
 }
-.section__subtitle {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
+.section__description {
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.17;
   text-align: center;
   @media screen and (min-width: 768px) {
     font-size: 16px;
-    line-height: 1.19;
-  }
-  @media screen and (min-width: 1280px) {
-    font-size: 16px;
+    line-height: 1.17;
   }
 }
