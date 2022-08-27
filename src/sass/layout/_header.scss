@@ -18,11 +18,21 @@
         }
 }
 
-.nav__link {
-    @media screen and (min-width: 768px) {
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 16px;
-            color: #2C2C2C;
+// Кнопка заказа //
+.order-button {
+    width: 100px;
+    height: 32px;
+    background: #BBF330;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    padding: 6px 17px 5px 16px;
+
+    @media screen and (max-width: 767px) {
+            display: none;
         }
+
 }
+
+
+
