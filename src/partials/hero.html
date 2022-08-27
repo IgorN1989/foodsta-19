@@ -10,29 +10,34 @@
     <button class="order-button" type="button">Order Now</button>
   </div>
   <div class="hero__dishes">
-    <picture>
-      <source
-        media="(min-width: 1280px)"
-        srcset="
-          ../images/slider-1@1x-desktop.png 1x,
-          ../images/slider-1@2x-desktop.png 2x
-        "
-        type="image/png"
-      />
-
-      <source
-        media="min-width: 767px)"
-        srcset="
-          ../images/slider-1@1x-tablet.png 1x,
-          ../images/slider-1@2x-tablet.png 2x
-        "
-        type="image/png"
-      />
-      <img
-        class="hero__image"
-        src="../images/slider-1@1x-desktop.png"
-        alt="falafel with lavash and cream sauce"
-      />
-    </picture>
+    <ul class="dishes__list">
+      <li class="dishes__item">
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              ./images/slider-1@1x-desktop.png 1x,
+              ./images/slider-1@2x-desktop.png 2x
+            "
+            type="image/png"
+          />
+          <source
+            media="(min-width: 767px)"
+            srcset="
+              ./images/slider-1@1x-tablet.png 1x,
+              ./images/slider-1@2x-tablet.png 2x
+            "
+            type="image/png"
+          />
+          <img
+            class="hero__image"
+            src="./images/slider-1@1x-desktop.png"
+            alt="falafel with lavash and cream sauce"
+          />
+        </picture>
+      </li>
+      <!--<li></li>
+      <li></li>-->
+    </ul>
   </div>
 </section>
