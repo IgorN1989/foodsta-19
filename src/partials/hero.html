@@ -10,94 +10,29 @@
     <button class="order-button" type="button">Order Now</button>
   </div>
   <div class="hero__dishes">
-    <ul class="hero__list">
-      <li class="hero__item">
-        <picture>
-          <source
-            media="(min-width: 1280px)"
-            srcset="../images/2@1x_ld_w.webp 1x, ../images/2@2x_ld_w.webp 2x"
-            type="image/webp"
-          />
-          <source
-            media="(min-width: 1280px)"
-            srcset="../images/2@1x_ld.jpg 1x, ../images/2@2x_ld.jpg 2x"
-            type="image/jpg"
-          />
-          <source
-            media="(max-width: 767px)"
-            srcset="../images/2@1x_md_w.webp 1x, ../images/2@2x_md_w.webp 2x"
-            type="image/webp"
-          />
-          <source
-            media="max-width: 767px)"
-            srcset="../images/2@x_md.jpg 1x, ../images/2@2x_md.jpg 2x"
-            type="image/web.jpg"
-          />
-          <img
-            src="../images/2@1x_ld.jpg"
-            class="hero__image"
-            alt="falafel with lavash and cream sauce"
-          />
-        </picture>
-      </li>
-      <li class="hero__item">
-        <picture>
-          <source
-            media="(min-width: 1280px)"
-            srcset="../images/3@1x_ld_w.webp 1x, ../images/3@2x_ld_w.webp 2x"
-            type="image/webp"
-          />
-          <source
-            media="(min-width: 1280px)"
-            srcset="../images/3@1x_ld.jpg 1x, ../images/3@2x_ld.jpg 2x"
-            type="image/jpg"
-          />
-          <source
-            media="(max-width: 767px)"
-            srcset="../images/3@1x_md_w.webp 1x, ../images/3@2x_md_w.webp 2x"
-            type="image/webp"
-          />
-          <source
-            media="max-width: 767px)"
-            srcset="../images/3@1x_md2jpg 1x, ../images/3@2x_md.jpg 2x"
-            type="image/web.jpg"
-          />
-          <img
-            src="../images/3@1x_md.jpg"
-            class="hero__image"
-            alt="Greek salad with spicy cheese"
-          />
-        </picture>
-      </li>
-      <li class="hero__item">
-        <picture>
-          <source
-            media="(min-width: 1280px)"
-            srcset="../images/4@1x_ld_w.webp 1x, ../images/4@2x_ld_w.webp 2x"
-            type="image/webp"
-          />
-          <source
-            media="(min-width: 1280px)"
-            srcset="../images/4@1x_ld.jpg 1x, ../images/4@2x_ld.jpg 2x"
-            type="image/jpg"
-          />
-          <source
-            media="(max-width: 767px)"
-            srcset="../images/4@1x_md_w.webp 1x, ../images/4@2x_md_w.webp 2x"
-            type="image/webp"
-          />
-          <source
-            media="max-width: 767px)"
-            srcset="../images/4@1x_md2jpg 1x, ../images/4@2x_md.jpg 2x"
-            type="image/web.jpg"
-          />
-          <img
-            src="../images/4@1x_md.jpg"
-            class="hero__image"
-            alt="Greek salad with spicy cheese"
-          />
-        </picture>
-      </li>
-    </ul>
+    <picture>
+      <source
+        media="(min-width: 1280px)"
+        srcset="
+          ../images/slider-1@1x-desktop.png 1x,
+          ../images/slider-1@2x-desktop.png 2x
+        "
+        type="image/jpg"
+      />
+
+      <source
+        media="max-width: 767px)"
+        srcset="
+          ../images/slider-1@1x-tablet.png 1x,
+          ../images/slider-1@2x-tablet.png 2x
+        "
+        type="image/web.jpg"
+      />
+      <img
+        class="hero__image"
+        src="../images/slider-1@1x-desktop.png"
+        alt="falafel with lavash and cream sauce"
+      />
+    </picture>
   </div>
 </section>

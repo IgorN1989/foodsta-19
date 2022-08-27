@@ -1,7 +1,7 @@
-@import '~node_modules/modern-normalize/modern-normalize.css';
+@import './layout/hero';
 .test {
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: tomato;
   padding: 20px;
   font-size: 24px;
-}/*# sourceMappingURL=index.css.map */
+} /*# sourceMappingURL=index.css.map */
