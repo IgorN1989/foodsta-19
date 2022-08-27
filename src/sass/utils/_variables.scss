@@ -1,0 +1,28 @@
+:root {
+  // fonts
+  --main-font: Roboto, sans-serif;
+
+  // text colors
+  --main-text-color: #2c2c2c;
+  --placeholder-color: #505050;
+
+  // base colors
+--black-color: #000000;
+--white-color: #ffffff;
+
+  // background colors
+  --bgc-white: #fefefe;
+  --bgc-shadow: radial-gradient(50% 50% at 50% 50%, #2F583F 0%, rgba(105, 105, 105, 0) 100%);
+
+  // accent-colors
+  --yellow-main: #ffe550;
+  --button-green: #bbf330;
+  --button-green-bright: #B5FF00;
+  --dark-green: #7EB101;
+
+
+  // transition
+    --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+

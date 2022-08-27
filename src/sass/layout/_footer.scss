@@ -1,0 +1,71 @@
+.footer {
+  // padding-top: 60px;
+  padding-bottom: 60px;
+
+  // Тимчасовий фон
+  background-image: url(../images/footer/Group-66.png);
+  background-size: cover;
+}
+
+.footer__top {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+
+  .nav {
+    margin-right: 101px;
+  }
+
+  .nav__list {
+    gap: 6px;
+    margin-top: 4px;
+    margin-bottom: 36px;
+  }
+
+  .nav__link {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    color: var(--black);
+    
+    transition: color var(--transition);
+
+    &:hover,
+    &:focus {
+      color: var(--button-green);
+    }
+  }
+}
+
+.policy {
+  text-align: center;
+}
+
+.policy__list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.policy__link {
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  font-size: 10px;
+  line-height: calc(12 / 10);
+  text-decoration-line: underline;
+  color: var(--dark-green);
+
+  transition: color var(--transition);
+
+  &:hover,
+  &:focus {
+    color: var(--button-green);
+  }
+}
+
+.copyright {
+  font-size: 10px;
+  line-height: calc(12 / 10);
+}
