@@ -1,0 +1,78 @@
+.subscribe__form {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.subscribe__label {
+  display: block;
+  margin-bottom: 12px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.subscribe__input {
+  width: calc(100vw - 40px);
+  max-width: 440px;
+  padding: 12px;
+  margin-bottom: 20px;
+
+  border: 1px solid var(--yellow-main);
+  border-radius: 30px;
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 150%;
+
+  &::placeholder {
+    color: var(--placeholder-color);
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 279px;
+    margin-right: 20px;
+  }
+}
+
+.subscribe__button {
+  display: block;
+  margin-left: auto;
+  padding: 11px 22px;
+
+  cursor: pointer;
+
+  border: none;
+  border-radius: 30px;
+  background-color: var(--button-green);
+  transition: background-color var(--transition);
+
+  &:hover,
+  &:focus {
+    background-color: var(--button-green-bright);
+  }
+
+  &--white {
+    margin-bottom: 20px;
+
+    border: 0.85px solid var(--dark-green);
+    background-color: var(--white-color);
+    transition: background-color var(--transition);
+
+    &:hover,
+    &:focus {
+      background-color: var(--yellow-main);
+    }
+  }
+}
+
+.subscribe__text {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 150%;
+  color: var(--main-text-color);
+}
+
+.subscribe__agrement {
+  font-size: 10px;
+  line-height: calc(12 / 10);
+}
