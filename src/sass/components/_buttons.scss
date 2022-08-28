@@ -1,0 +1,29 @@
+button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  font-family: inherit;
+  text-align: center;
+}
+
+// .menu-button {
+//   border: none;
+//   background-color: transparent;
+
+//   @media screen and (min-width: 768px) {
+//     display: none;
+//   }
+// }
+
+// .menu-button__icon {
+//   fill: var(--dark-green);
+//   transition: fill var(--transition);
+
+// &:hover,
+// &:focus {
+//     fill: var(--button-green);
+// }
+// }
