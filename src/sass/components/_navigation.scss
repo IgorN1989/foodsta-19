@@ -1,21 +1,24 @@
-// .mobile-menu {
-//   @media screen and (max-width: 767px) {
-//     display: none;
-//   }
-// }
+
+.nav {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
 
 .nav__list {
   display: flex;
-  flex-direction: column;
-  // margin-right: 28px;
-
-  // @media screen and (min-width: 768px) {
-  //   flex-direction: row;
-  //   gap: 28px;
-  // }
+  margin-right: 28px;
+    gap: 28px;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+   
+  }
 }
 
+
 .nav__link {
+  padding-top: 10px;
+  padding-bottom: 10px;
   @media screen and (max-width: 1279px) {
     color: var(--black);
   }
@@ -29,4 +32,9 @@
       text-decoration-line: underline;
     }
   }
+}
+
+.current-page {
+  font-weight: 700px;
+  color: var(--button-green);
 }
