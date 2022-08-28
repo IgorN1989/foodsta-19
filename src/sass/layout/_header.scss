@@ -1,3 +1,8 @@
+.header {
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 .header__container {
     display: flex;
     align-items: center;
@@ -5,9 +10,19 @@
 
 
 .menu-button {
+    display: inline-flex;
+        margin-left: auto;
+        border: none;
+        background-color: transparent;
+    
+        z-index: 3;
 @media screen and (min-width: 768px) {
       display: none;
     }
+}
+
+.menu__list {
+    padding-right: 20px;
 }
 
 .nav {
@@ -40,6 +55,37 @@
 
 }
 
+// Мобильное меню
 
 
+.menu-button.is-open .menu-button__icon--cross {
+    display: block;
+}
 
+.mobile-menu {
+    display: none;
+    position: absolute;
+    width: 130px;
+    top: 60%;
+    right: 8%;
+    border-radius: 30px 0px 30px 30px;
+    background-color: #FFFFFF;
+    padding-right: 0px;
+    padding-top: 4px;
+    padding-left: 16px;
+    padding-bottom: 0px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    border: 1px solid blue;
+
+    &.is-open {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.menu__item {
+    padding-bottom: 16px;
+}
