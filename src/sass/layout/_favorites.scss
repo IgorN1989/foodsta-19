@@ -1,12 +1,14 @@
 .favorites {
   padding-bottom: 60px;
+  padding-top: 60px;
 
   @media screen and (min-width: 768px) {
     padding-bottom: 100px;
+    padding-top: 100px;
   }
 }
 
-.favorites__text {
+.favorites__thumb {
   margin-bottom: 60px;
   @media screen and (min-width: 1280px) {
     margin-bottom: 40px;
@@ -22,6 +24,7 @@
 
 .favorites__item {
   width: 280px;
+  height: 282px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -46,13 +49,17 @@
   }
 
   @media screen and (min-width: 768px) {
+    width: 336px;
+    height: 338px;
+
     border-width: 14px;
 
     flex-basis: calc((100% - 32px * 1) / 2);
-    justify-content: center;
   }
 
   @media screen and (min-width: 1280px) {
+    width: 395px;
+    height: 397px;
     border-width: 16px;
 
     flex-basis: calc((100% - 32px * 2) / 3);
