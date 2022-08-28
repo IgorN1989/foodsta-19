@@ -1,4 +1,8 @@
 .subscribe__section {
+  position: relative;
+  top: - 43px;
+  padding-top: 95px;
+  padding-bottom: 60px;
   background-image: url('../images/subscribe/banan@1x-desc.png');
 
   @media screen and (min-device-pixel-ratio: 2),
@@ -7,12 +11,15 @@
     background-image: url('../images/subscribe/banan@2x-mob.png');
   }
 
-  background-size: 280px,
-  78px;
+  background-size: 161px 78px;
   background-repeat: no-repeat;
   background-position: center top;
 
   @media screen and (min-width:768px) {
+    position: relative;
+      top: - 74px;
+    padding-top: 156px;
+    padding-bottom: 100px;
     background-image: url('../images/subscribe/banan@1x-tab.png');
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -21,11 +28,11 @@
       background-image: url('../images/subscribe/banan@2x-tab.png');
     }
 
-    background-size: 281px,
-    136px;
-    background-position: top right;
+    background-size: 281px 136px;
+    background-position: top right 30px;
   }
     @media screen and (min-width:1280px) {
+      padding-top: 46px;
       background-image: url('../images/subscribe/banan@1x-desc.png');
   
       @media screen and (min-device-pixel-ratio: 2),
@@ -34,16 +41,32 @@
         background-image: url('../images/subscribe/banan@2x-desc.png');
       }
   
-      background-size: 608px,
-      266px;
+      background-size: 608px 266px;
       background-position: top right;
     }
 }
 
+.subscribe__title-box{
+  margin-bottom: 40px; 
+  @media screen and (min-width: 768px){
+    margin-bottom: 24px;
+    width: 656px;
+  }
+}
+.subscribe__title{
+  text-align: start;
+}
+.subscribe__description{
+  text-align: start;
+}
 .subscribe {
   @media screen and (min-width: 768px) {
     display: flex;
+    gap: 22px;
   }
+    @media screen and (min-width: 1280px){
+      gap: 32px;
+    }
 }
 .subscribe__label {
   display: block;
@@ -68,6 +91,9 @@
   &::placeholder {
     color: var(--placeholder-color);
   }
+    @media screen and (min-width: 768px){
+      margin: 0;
+    }
 }
 
 .subscribe__button {
@@ -99,6 +125,9 @@
       background-color: var(--yellow-main);
     }
   }
+     @media screen and (min-width: 768px){
+      margin-left: 0;
+     }
 }
 
 .subscribe__text {
