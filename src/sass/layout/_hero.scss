@@ -1,3 +1,28 @@
+.hero {
+    display: flex;
+}
+
+.hero__box {
+    max-width: 440px;
+
+    @media screen and (min-width: 768px) {
+        max-width: 537px;
+    }
+
+
+    @media screen and (min-width: 1280px) {
+        max-width: 502px;
+    }
+
+
+}
+
+.hero__dishes {
+    @media screen and (max-width: 479px) {
+        display: none;
+    }
+}
+
 .dishes__list {
     display: flex;
 }
