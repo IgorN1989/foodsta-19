@@ -1,12 +1,25 @@
 .footer {
-  // padding-top: 60px;
-  padding-bottom: 60px;
-  // background-color: rgb(123, 79, 225);
+  outline: 1px solid red;
 
   @media screen and (max-width: 767px) {
+    max-width: 480px;
     background-image: url(../images/footer/left-apple@mobile_1x.png), url(../images/footer/right-orange@mobile_1x.png), url(../images/footer/bottom-apple-banana@mobile_1x.png);
     background-repeat: no-repeat;
     background-position: left 132px, right top, 63% bottom;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    background-image: url(../images/footer/fruits@tablet_1x.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+  }
+
+    @media screen and (min-width: 1280px) {
+      max-width: 1280px;
+    background-image: url(../images/footer/fruits@desktop_1x.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
   }
 }
 
@@ -15,14 +28,30 @@
   flex-wrap: wrap;
   margin-bottom: 60px;
 
+@media screen and (min-width: 768px) {
+    margin-bottom: 100px;
+    align-items: baseline;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 80px;
+  }
+
+
   .nav {
     margin-right: 101px;
   }
 
   .nav__list {
-    gap: 6px;
     margin-top: 4px;
     margin-bottom: 36px;
+
+    @media screen and (min-width: 768px) {
+      
+      flex-wrap: nowrap;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
   }
 
   .nav__link {
@@ -43,12 +72,23 @@
 
 .policy {
   text-align: center;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
 }
 
 .policy__list {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+    gap: 20px;
+  }
 }
 
 .policy__link {
