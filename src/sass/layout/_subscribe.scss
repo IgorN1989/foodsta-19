@@ -87,6 +87,7 @@
   background-color: transparent;
   font-size: 12px;
   line-height: 150%;
+  outline: transparent;
 
   &::placeholder {
     color: var(--placeholder-color);
@@ -94,6 +95,15 @@
     @media screen and (min-width: 768px){
       margin: 0;
     }
+}
+.subscribe__input:not(:placeholder-shown):required:valid {
+  border-color: var(--dark-green);
+  outline: transparent;
+}
+
+.subscribe__input:not(:placeholder-shown):required:invalid {
+  border-color: #FF705D;
+  outline: transparent;
 }
 
 .subscribe__button {
