@@ -1,3 +1,45 @@
+.subscribe__section {
+  background-image: url('../images/subscribe/banan@1x-desc.png');
+
+  @media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+    background-image: url('../images/subscribe/banan@2x-mob.png');
+  }
+
+  background-size: 280px,
+  78px;
+  background-repeat: no-repeat;
+  background-position: center top;
+
+  @media screen and (min-width:768px) {
+    background-image: url('../images/subscribe/banan@1x-tab.png');
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+      background-image: url('../images/subscribe/banan@2x-tab.png');
+    }
+
+    background-size: 281px,
+    136px;
+    background-position: top right;
+  }
+    @media screen and (min-width:1280px) {
+      background-image: url('../images/subscribe/banan@1x-desc.png');
+  
+      @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+        background-image: url('../images/subscribe/banan@2x-desc.png');
+      }
+  
+      background-size: 608px,
+      266px;
+      background-position: top right;
+    }
+}
+
 .subscribe {
   @media screen and (min-width: 768px) {
     display: flex;
