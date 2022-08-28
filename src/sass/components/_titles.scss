@@ -15,6 +15,12 @@
   }
 }
 
+.offerings__thumb .section__title {
+  @media screen and (max-width: 767px){
+    margin-bottom: 28px;
+  }
+  }
+
 .section__description {
   font-size: 14px;
   line-height: 1.17;
