@@ -21,14 +21,13 @@
     128px,
     255px,
     280px,
-    320px;
+    100%;
     background-repeat: no-repeat;
     background-position: center 41px,
     center 267px,
     center 82px,
     center 70px,
     top;
-
 
     @media screen and (min-width: 480px) {
         width: 480px;
@@ -115,18 +114,20 @@
 }
 
 .offerings__thumb {
-    padding-top: 410px;
+    padding-top: 350px;
+    margin-bottom: 28px;
+    align-items: flex-start;
 
     @media screen and (min-width: 768px) {
         width: 526px;
-        padding-top: 604px;
+        padding-top: 504px;
+        margin-bottom: 40px;
     }
 
     @media screen and (min-width: 1280px) {
         width: 526px;
-        padding-top: 260px;
+        padding-top: 173px;
         margin-left: 656px;
-        ;
     }
 }
 
@@ -142,10 +143,27 @@
     }
 }
 
-.offerings__icon {
-    margin-bottom: 8px;
+.offerings__icon-rocket {
+    width: 48px;
+    height: 48px;
     background-color: var(--white-color);
     border-radius: 50%;
+    margin-bottom: 8px;
+    background-image: url('../images/offerings/rocket.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.offerings__icon-click {
+    width: 48px;
+    height: 48px;
+    background-color: var(--white-color);
+    border-radius: 50%;
+    margin-bottom: 8px;
+    background-image: url('../images/offerings/click.svg');
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .offerings__subtitle {
@@ -179,27 +197,24 @@
 }
 
 .offerings__order-cont {
-    padding-bottom: 60px;
-
-    @media screen and (min-width: 768px) {
-        margin-bottom: 100px;
-    }
 
     @media screen and (min-width: 1280px) {
         margin-left: 656px;
-        padding-bottom: 100px;
     }
 }
 
 .offerings__link {
     margin-left: 24px;
 
-    &::after {
-        content: "";
-        background-image: url("../images/offerings/read-more.svg");
-    }
-
     @media screen and (min-width: 1280px) {
         display: none;
     }
+}
+
+.offerings__read-more {
+    background-image: url('../images/offerings/read-more.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 6px;
+    height: 10px;
 }
