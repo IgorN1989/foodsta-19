@@ -1,4 +1,4 @@
-<header class="header">
+<header class="header section">
   <div class="container header__container">
     <!-- Логотип -->
     <a class="logo" href="./index.html">
@@ -9,51 +9,79 @@
 
     <!-- Кнопка мобильного меню -->
     <button
-      class="menu-button"
+      class="menu-button js-open-menu"
       type="button"
       aria-expanded="false"
       aria-controls="mobile-menu"
       data-menu-button
     >
       <svg
-        class="menu-button__icon"
+        class="menu-button__icon--menu"
         width="28"
         height="28"
         aria-label="Mobile menu switch"
       >
-        <use
-          class="menu-button__icon--cross"
-          href="./images/icons/sprite.svg#burger-menu"
-        ></use>
-        <use
-          class="menu-button__icon--menu"
-          href="./images/icons/sprite.svg#burger-menu"
-        ></use>
+        <use href="./images/icons/sprite.svg#burger-menu"></use>
       </svg>
     </button>
 
-    <!-- Меню навигации -->
-    <div class="mobile-menu" id="mobile-menu" data-menu>
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a class="nav__link" href="#">Home</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">About</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">Service</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">Menu</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">Contact</a>
-          </li>
-        </ul>
-      </nav>
+    <!-- Мобильное меню -->
+    <div class="mobile-menu js-menu-container" id="mobile-menu" data-menu>
+      <button
+        class="menu-button js-close-menu btn"
+        type="button"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        data-menu-button
+      >
+        <svg
+          class="menu-button__icon--cross"
+          width="28"
+          height="28"
+          aria-label="Mobile menu switch"
+        >
+          <use href="./images/icons/sprite.svg#icon-cross"></use>
+        </svg>
+      </button>
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a class="menu__link" href="#">Home</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">About</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Service</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Menu</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Contact</a>
+        </li>
+      </ul>
     </div>
+
+    <!-- Меню навигации -->
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link current-page" href="#">Home</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">About</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">Service</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">Menu</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">Contact</a>
+        </li>
+      </ul>
+    </nav>
 
     <!-- Кнопка заказа -->
     <button class="order-button" type="button">Order Now</button>

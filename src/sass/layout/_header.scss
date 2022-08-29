@@ -1,3 +1,10 @@
+.header {
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: var(--box-shadow);
+
+}
 .header__container {
     display: flex;
     align-items: center;
@@ -5,41 +12,67 @@
 
 
 .menu-button {
+    display: inline-flex;
+        margin-left: auto;
+        border: none;
+        background-color: transparent;
+    
+        z-index: 3;
 @media screen and (min-width: 768px) {
       display: none;
     }
 }
 
-.nav {
-    @media screen and (max-width: 767px) {
-            display: none;
-        }
+
+
+
+
+// Мобильное меню
+
+
+.menu-button.is-open .menu-button__icon--cross {
+    display: block;
 }
 
-.nav__list {
-    @media screen and (min-width: 768px) {
-            flex-direction: row;
-            margin-right: 28px;
-            gap: 28px;
-        }
+.mobile-menu {
+    display: none;
+    position: absolute;
+    width: 125px;
+    top: 60%;
+    right: 7%;
+    border-radius: 30px 0px 30px 30px;
+    background-color: #FFFFFF;
+    padding: 4px 0 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    box-shadow: var(--box-shadow);
+    outline: 1px solid blue;
+    
+
+    &.is-open {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
-// Кнопка заказа //
-.order-button {
-    width: 100px;
-    height: 32px;
+.menu__item {
+    padding-left: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.menu__list :hover,
+.menu__list :focus {
     background: #BBF330;
-    border-radius: 30px;
-    border: none;
-    cursor: pointer;
-    padding: 6px 17px 5px 16px;
-
-    @media screen and (max-width: 767px) {
-            display: none;
-        }
-
+    overflow: hidden;
+    
 }
 
 
-
-
+.btn {
+    position: absolute;
+    top: 3%;
+    right: 0;
+}

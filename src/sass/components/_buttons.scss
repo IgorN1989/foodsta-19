@@ -9,21 +9,32 @@ button {
   text-align: center;
 }
 
-// .menu-button {
-//   border: none;
-//   background-color: transparent;
+// Кнопка заказа //
+.order-button {
+  background-color: var(--button-green);
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  padding: 6px 17px 5px 16px;
 
-//   @media screen and (min-width: 768px) {
-//     display: none;
-//   }
-// }
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.5;
+  transition: background-color var(--transition);
 
-// .menu-button__icon {
-//   fill: var(--dark-green);
-//   transition: fill var(--transition);
+  &:hover,
+  &:focus {
+    background-color: var(--button-green-bright);
+  }
 
-// &:hover,
-// &:focus {
-//     fill: var(--button-green);
-// }
-// }
+  .header__container & {
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+}
+
+.order-button--white {
+  border: 2px solid var(--dark-green);
+  background-color: var(--white-color);
+}
