@@ -28,24 +28,30 @@
     url('../images/offerings/apple-sm-ellipse-border.svg');
 
   @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
     background-image: url('../images/offerings/apple-sm@2x.png'),
       url('../images/offerings/apple-shadow-sm@2x.png'),
       url('../images/offerings/apple-sm-ellipse-bg.svg'),
       url('../images/offerings/apple-sm-ellipse-border.svg');
   }
 
-  background-size: 201px, 128px, 255px, 280px;
+  background-size: 201px,
+  128px,
+  255px,
+  280px;
   background-repeat: no-repeat;
-  background-position: center -19px, center 207px, center 22px, center 10px;
+  background-position: center -19px,
+  center 207px,
+  center 22px,
+  center 10px;
 
   @media screen and (min-width: 768px) {
     background-image: url('../images/offerings/apple-md@1x.png');
 
     @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
       background-image: url('../images/offerings/apple-md@2x.png');
     }
 
@@ -61,17 +67,23 @@
       url('../images/offerings/apple-lg-ellipse-border.svg');
 
     @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
       background-image: url('../images/offerings/apple-lg@2x.png'),
         url('../images/offerings/apple-shadow-lg@2x.png'),
         url('../images/offerings/apple-lg-ellipse-bg.svg'),
         url('../images/offerings/apple-lg-ellipse-border.svg');
     }
 
-    background-size: 396px, 252px, 502px, 550px;
+    background-size: 396px,
+    252px,
+    502px,
+    550px;
     background-repeat: no-repeat;
-    background-position: 100px 77px, 171px 519px, 40px 155px, 16px 131px;
+    background-position: 100px 77px,
+    171px 519px,
+    40px 155px,
+    16px 131px;
     padding-bottom: 100px;
   }
 }
@@ -166,6 +178,9 @@
 
 .offerings__link {
   margin-left: 24px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
 
   @media screen and (min-width: 1280px) {
     display: none;
