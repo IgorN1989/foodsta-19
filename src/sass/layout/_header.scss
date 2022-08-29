@@ -37,20 +37,18 @@
 .mobile-menu {
     display: none;
     position: absolute;
-    width: 130px;
+    width: 125px;
     top: 60%;
-    right: 8%;
-    border-radius: 30px 0px 0px 0px;
+    right: 7%;
+    border-radius: 30px 0px 30px 30px;
     background-color: #FFFFFF;
-    padding-right: 0px;
-    padding-top: 4px;
-    padding-left: 16px;
-    padding-bottom: 0px;
+    padding: 4px 0 0;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     color: #000000;
     box-shadow: var(--box-shadow);
+    outline: 1px solid blue;
     
 
     &.is-open {
@@ -60,14 +58,21 @@
 }
 
 .menu__item {
+    padding-left: 16px;
+    padding-top: 16px;
     padding-bottom: 16px;
 }
 
 .menu__list :hover,
 .menu__list :focus {
     background: #BBF330;
-    border-radius: 30px 0px 0px 0px;
+    overflow: hidden;
+    
 }
 
 
-
+.btn {
+    position: absolute;
+    top: 3%;
+    right: 0;
+}
