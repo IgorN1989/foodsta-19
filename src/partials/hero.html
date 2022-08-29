@@ -1,0 +1,36 @@
+<section class="hero section">
+  <div class="hero__box">
+    <h1 class="hero__title">Enjoy Your Favorite<br />Food From Anywhere</h1>
+    <p class="hero__description">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+      varius enim in eros elementum tristique. Duis cursus, mi quis viverra
+      ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+    </p>
+    <button class="order-button" type="button">Order Now</button>
+  </div>
+  <div class="hero__dishes">
+    <picture>
+      <source
+        media="(min-width: 1280px)"
+        srcset="
+          ./images-slider/slider-1@1x-desktop_w.png 1x,
+          ./images-slider/slider-1@2x-desktop_w.png 2x
+        "
+        type="image/png"
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./images-slider/slider-1@1x-tablet_w.png 1x,
+          ./images-slider/slider-1@2x-tablet_w.png 2x
+        "
+        type="image/png"
+      />
+      <img
+        class="hero__image"
+        src="./images-slider/slider-1@1x-desktop_w.png"
+        alt="falafel with lavash and cream sauce"
+      />
+    </picture>
+  </div>
+</section>
