@@ -11,7 +11,7 @@
     background-image: url('../images/subscribe/banan@2x-mob.png');
   }
 
-  background-size: 280px 78px;
+  background-size: 161px 78px;
   background-repeat: no-repeat;
   background-position: center top;
 
@@ -89,6 +89,7 @@
   line-height: 150%;
   outline: transparent;
   margin-bottom: 6px;
+  transition:border var(--transition) ;
 
   &::placeholder {
     color: var(--placeholder-color);
@@ -110,10 +111,15 @@
   display: flex;
   gap: 4.44px;
   opacity: 0;
+  transition: opacity var(--transition);
 }
 .subscribe__input:not(:placeholder-shown):required:invalid + .subscribe__warning-box{
   opacity: 1;
 }
+.subscribe__input:not(:placeholder-shown):required:invalid:not(:focus)+.subscribe__warning-box{
+  opacity: 1;
+}
+
 .subscribe__warning-text{
   font-size: 10px;
   line-height: 1.5;

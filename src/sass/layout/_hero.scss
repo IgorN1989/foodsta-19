@@ -50,8 +50,9 @@
 }
 
 .hero__dishes {
+    margin-left: auto;
 
-    @media screen and (max-width: 479px) {
+    @media screen and (max-width: 767px) {
         display: none;
     }
 }
@@ -67,14 +68,10 @@
     border: 16px solid yellow;
     justify-content: center;
     border-radius: 50%;
-
-    @media screen and (min-width:1280px) {
-        border: 26px solid yellow;
-    }
 }
 
 .hero__image {
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
         width: 292px;
         height: 292px;
     }
