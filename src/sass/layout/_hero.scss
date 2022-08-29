@@ -50,6 +50,7 @@
 }
 
 .hero__dishes {
+    margin-left: auto;
 
     @media screen and (max-width: 479px) {
         display: none;
@@ -59,28 +60,32 @@
 .dishes__list {
     display: flex;
     flex-wrap: wrap;
+
 }
 
 .dishes__item {
     display: flex;
     align-items: center;
-    border: 16px solid yellow;
+    border: 16px solid var(--yellow-main);
     justify-content: center;
     border-radius: 50%;
 
+
     @media screen and (min-width:1280px) {
-        border: 26px solid yellow;
+        border: 26px solid var(--yellow-main);
     }
 }
 
 .hero__image {
-    @media screen and (max-width: 768px) {
-        width: 292px;
-        height: 292px;
-    }
 
-    @media screen and (min-width: 1280px) {
-        width: 528px;
-        height: 528px;
-    }
+
+    // @media screen and (max-width: 768px) {
+    //     width: 292px;
+    //     height: 292px;
+    // }
+
+    // @media screen and (min-width: 1280px) {
+    //     width: 528px;
+    //     height: 528px;
+    // }
 }
