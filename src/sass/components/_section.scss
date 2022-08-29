@@ -1,32 +1,16 @@
 .section {
-  max-width: 480px;
   padding-top: 60px;
-  padding-right: 20px;
   padding-bottom: 60px;
-  padding-left: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  min-width: 320px;
-  
+
   // outline: 1px solid blue;
 
-  @media screen and (max-width: 767px) {
-    max-width: 480px;
-  }
-
   @media screen and(min-width: 768px) {
-    max-width: 768px;
     padding-top: 100px;
-    padding-right: 32px;
     padding-bottom: 100px;
-    padding-left: 32px;
   }
 
   @media screen and(min-width: 1280px) {
-    max-width: 1280px;
     padding-top: 100px;
     padding-bottom: 100px;
-    padding-right: 16px;
-    padding-left: 16px;
   }
 }
