@@ -36,7 +36,7 @@
     top: 60%;
     right: 4%;
     border-radius: 30px 0px 30px 30px;
-    background-color: #FFFFFF;
+    background-color: var(--white-color);
     padding: 4px 0 0;
     font-weight: 400;
     font-size: 16px;
@@ -60,17 +60,17 @@
 
 .menu__list :hover,
 .menu__list :focus {
-    background: #BBF330;
+    background: var(--button-green-bright);
     
 }
 
 .menu__list .menu__item:first-child:hover {
-    background: #BBF330;
+    background: var(--button-green-bright);
     border-radius: 30px 0px 0px 0px;
 }
 
 .menu__list .menu__item:last-child:hover {
-    background: #BBF330;
+    background: var(--button-green-bright);
     border-radius: 0px 0px 30px 30px;
 }
 
