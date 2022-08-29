@@ -32,6 +32,7 @@
     background-position: top right 30px;
   }
     @media screen and (min-width:1280px) {
+      top: - 70px;
       padding-top: 46px;
       background-image: url('../images/subscribe/banan@1x-desc.png');
   
@@ -39,10 +40,9 @@
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
         background-image: url('../images/subscribe/banan@2x-desc.png');
-      }
-  
+      }  
       background-size: 608px 266px;
-      background-position: top right;
+      background-position: top right 20px;
     }
 }
 
@@ -75,19 +75,20 @@
   font-size: 14px;
   line-height: 150%;
 }
-
+.subscribe__box{
+  margin-bottom: 3px;
+}
 .subscribe__input {
   width: calc(100vw - 40px);
   max-width: 440px;
   padding: 12px;
-  margin-bottom: 20px;
-
   border: 1px solid var(--yellow-main);
   border-radius: 30px;
   background-color: transparent;
   font-size: 12px;
   line-height: 150%;
   outline: transparent;
+  margin-bottom: 6px;
 
   &::placeholder {
     color: var(--placeholder-color);
@@ -105,11 +106,24 @@
   border-color: #FF705D;
   outline: transparent;
 }
-
+.subscribe__warning-box{
+  display: flex;
+  gap: 4.44px;
+  opacity: 0;
+}
+.subscribe__input:not(:placeholder-shown):required:invalid + .subscribe__warning-box{
+  opacity: 1;
+}
+.subscribe__warning-text{
+  font-size: 10px;
+  line-height: 1.5;
+  color: #FF705D;
+}
 .subscribe__button {
   display: block;
   margin-left: auto;
   padding: 11px 22px;
+  max-height: 42px;
 
   cursor: pointer;
 
