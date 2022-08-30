@@ -12,7 +12,7 @@
         url(../images/footer/mobile-right@_2x.png);
     }
 
-    background-size: 110px 116px, 253px 66px, 104px 259px;
+    background-size: 110px, 253px, 104px;
     background-repeat: no-repeat;
     background-position: left 132px, 63% bottom, right top;
   }
@@ -30,26 +30,30 @@
         url(../images/footer/tablet-right@_2x.png);
     }
 
-    background-size: 167px 62px, 538px 141px, 203px 506px;
+    background-size: 167px, 538px, 203px;
     background-repeat: no-repeat;
     background-position: left bottom, center bottom, right bottom;
   }
 
   @media screen and (min-width: 1280px) {
-    background-image: url(../images/footer/desktop-left@_1x.png),
-      url(../images/footer/desktop-center@_1x.png),
+    background-image: url(../images/footer/desktop-center@_1x.png),
+      url(../images/footer/desktop-left@_1x.png),
       url(../images/footer/desktop-right@_1x.png);
+      
+    background-size: 930px 266px, 196px 62px, 181px 73px;
+    background-repeat: no-repeat;
+    background-position: center bottom, left bottom, right bottom;
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      background-image: url(../images/footer/desktop-left@_2x.png),
-        url(../images/footer/desktop-center@_2x.png),
+      background-image: url(../images/footer/desktop-center@_2x.png),
+        url(../images/footer/desktop-left@_2x.png),
         url(../images/footer/desktop-right@_2x.png);
 
-      background-size: 196px 62px, 930px 266px, 181px 73px;
+      background-size: 930px 266px, 196px 62px, 181px 73px;
       background-repeat: no-repeat;
-      background-position: left bottom, center bottom, right bottom;
+      background-position: center bottom, left bottom, right bottom;
     }
   }
 }
@@ -77,6 +81,7 @@
     justify-content: space-between;
     align-items: baseline;
   }
+
   .policy__list {
     display: flex;
     justify-content: space-between;
