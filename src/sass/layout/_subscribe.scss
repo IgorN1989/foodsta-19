@@ -1,66 +1,65 @@
 .subscribe__section {
   position: relative;
-  top: - 43px;
+  top: -43px;
   padding-top: 95px;
   padding-bottom: 17px;
   background-image: url('../images/subscribe/banan@1x-mob.png');
 
   @media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
     background-image: url('../images/subscribe/banan@2x-mob.png');
   }
 
   background-size: 280px;
   background-repeat: no-repeat;
   background-position: center top;
-  @media screen and (min-width:440px) and (max-width:767px){
-    top: - 70px;
+  @media screen and (min-width: 440px) and (max-width: 767px) {
+    top: -70px;
   }
 
-
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     position: relative;
-    top: - 74px;
+    top: -74px;
     padding-top: 156px;
     padding-bottom: 15px;
     background-image: url('../images/subscribe/banan@1x-tab.png');
 
     @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
       background-image: url('../images/subscribe/banan@2x-tab.png');
     }
 
     background-size: 281px;
     background-position: top right 30px;
   }
-    @media screen and (min-width:1280px) {
-      top: - 70px;
-      padding-top: 46px;
-      background-image: url('../images/subscribe/banan@1x-desc.png');
-  
-      @media screen and (min-device-pixel-ratio: 2),
+  @media screen and (min-width: 1280px) {
+    top: -70px;
+    padding-top: 46px;
+    background-image: url('../images/subscribe/banan@1x-desc.png');
+
+    @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-        background-image: url('../images/subscribe/banan@2x-desc.png');
-      }  
-      background-size: 608px;
-      background-position: top right 20px;
+      background-image: url('../images/subscribe/banan@2x-desc.png');
     }
+    background-size: 608px;
+    background-position: top right 20px;
+  }
 }
 
-.subscribe__title-box{
-  margin-bottom: 40px; 
-  @media screen and (min-width: 768px){
+.subscribe__title-box {
+  margin-bottom: 40px;
+  @media screen and (min-width: 768px) {
     margin-bottom: 24px;
     width: 656px;
   }
 }
-.subscribe__title{
+.subscribe__title {
   text-align: start;
 }
-.subscribe__description{
+.subscribe__description {
   text-align: start;
 }
 .subscribe {
@@ -68,9 +67,9 @@
     display: flex;
     gap: 22px;
   }
-    @media screen and (min-width: 1280px){
-      gap: 32px;
-    }
+  @media screen and (min-width: 1280px) {
+    gap: 32px;
+  }
 }
 
 .subscribe__input {
@@ -84,14 +83,14 @@
   line-height: 150%;
   outline: transparent;
   margin-bottom: 6px;
-  transition:border var(--transition) ;
+  transition: border var(--transition);
 
   &::placeholder {
     color: var(--placeholder-color);
   }
-    @media screen and (min-width: 768px){
-      width: 395px;
-    }
+  @media screen and (min-width: 768px) {
+    width: 395px;
+  }
 }
 .subscribe__input:not(:placeholder-shown):required:valid {
   border-color: var(--dark-green);
@@ -99,26 +98,28 @@
 }
 
 .subscribe__input:not(:placeholder-shown):required:invalid {
-  border-color: #FF705D;
+  border-color: #ff705d;
   outline: transparent;
 }
-.subscribe__warning-box{
+.subscribe__warning-box {
   display: flex;
   gap: 4.44px;
   opacity: 0;
   transition: opacity var(--transition);
 }
-.subscribe__input:not(:placeholder-shown):required:invalid + .subscribe__warning-box{
+.subscribe__input:not(:placeholder-shown):required:invalid
+  + .subscribe__warning-box {
   opacity: 1;
 }
-.subscribe__input:not(:placeholder-shown):required:invalid:not(:focus)+.subscribe__warning-box{
+.subscribe__input:not(:placeholder-shown):required:invalid:not(:focus)
+  + .subscribe__warning-box {
   opacity: 1;
 }
 
-.subscribe__warning-text{
+.subscribe__warning-text {
   font-size: 10px;
   line-height: 1.5;
-  color: #FF705D;
+  color: #ff705d;
 }
 .subscribe__button {
   display: block;
@@ -140,7 +141,7 @@
 
   &--white {
     margin-bottom: 20px;
-
+    padding: -1px;
     border: 0.85px solid var(--dark-green);
     background-color: var(--white-color);
     transition: background-color var(--transition);
@@ -150,9 +151,9 @@
       background-color: var(--yellow-main);
     }
   }
-     @media screen and (min-width: 768px){
-      margin-left: 0;
-     }
+  @media screen and (min-width: 768px) {
+    margin-left: 0;
+  }
 }
 
 .subscribe__text {
@@ -163,17 +164,35 @@
 }
 
 .subscribe__agrement {
-    font-size: 10px;
-        line-height: calc(12 / 10);
+  font-size: 10px;
+  line-height: calc(12 / 10);
+
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+    line-height: calc(14 / 12);
+  }
 }
 
 .footer__top {
-  .subscribe__label {
-      display: block;
-      margin-bottom: 12px;
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 150%;
-    }
-}
+  @media screen and (min-width: 768px) {
+    
+  .subscribe__form {
+    display: flex;
+    flex-wrap: wrap;
+      .subscribe__label {
+        display: block;
+        width: 100%;
+        margin-bottom: 12px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 150%;
+      }
 
+      .subscribe__input {
+        display: flex;
+        width: 279px;
+        margin-right: 13px;
+      }
+    }
+  }
+}

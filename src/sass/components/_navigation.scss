@@ -29,8 +29,7 @@
   }
 }
 
-.nav__link:hover::after,
-.nav__link:focus::after {
+.nav__link::after {
   content: '';
   position: absolute;
   bottom: 11px;
@@ -38,6 +37,11 @@
   display: block;
   width: 100%;
   height: 1px;
+  background-color: inherit;
+  transition: background-color var(--transition);
+}
+
+.nav__link:hover.nav__link::after {
   background-color: var(--button-green);
 }
 
@@ -62,8 +66,14 @@
 
   .nav {
     display: flex;
-    margin-top: -6px;
+    position: relative;
+    top: -6px;
     margin-bottom: 30px;
+
+    @media screen and (min-width: 768px) {
+     top: -14px;
+    left: -160px;    
+    }
   }
 
   .nav__list {
