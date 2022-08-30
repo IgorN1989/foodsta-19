@@ -174,25 +174,37 @@
 }
 
 .footer__top {
+  .subscribe__label {
+    display: block;
+    width: 100%;
+    margin-bottom: 12px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+  }
+
   @media screen and (min-width: 768px) {
-    
-  .subscribe__form {
-    display: flex;
-    flex-wrap: wrap;
-      .subscribe__label {
-        display: block;
-        width: 100%;
-        margin-bottom: 12px;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 150%;
-      }
+    .subscribe__form {
+      display: flex;
+      flex-wrap: wrap;
 
       .subscribe__input {
         display: flex;
         width: 279px;
         margin-right: 13px;
       }
+    }
+  }
+}
+
+.footer__container {
+  position: relative;
+
+  @media screen and (min-width: 1280px) {
+    .subscribe__thumb {
+      position: absolute;
+      top: 0;
+      right: -45px;
     }
   }
 }

@@ -44,7 +44,7 @@
       
     background-size: 930px 266px, 196px 62px, 181px 73px;
     background-repeat: no-repeat;
-    background-position: center bottom, left bottom, right bottom;
+    background-position: 61% bottom, left 55px bottom, right 20px bottom;
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
@@ -72,6 +72,7 @@
 
   @media screen and (min-width: 1280px) {
     margin-bottom: 80px;
+    height: 110px;
   }
 }
 
