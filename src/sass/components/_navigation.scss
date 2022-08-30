@@ -57,9 +57,25 @@
   }
 }
 
-.footer .nav__list {
-  display: flex;
-  flex-direction: column;
-  
+
+.footer__top {
+
+  .nav {
+    display: flex;
+  }
+  .nav__list {
+      @media screen and (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+        margin-right: 81px;
+      }
+    }
+
+    .nav__item {
+      outline: 1px solid red;
+    }
 }
+
+
+
 

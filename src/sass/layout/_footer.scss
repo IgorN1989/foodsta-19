@@ -84,7 +84,7 @@
     align-items: baseline;
   }
 
-  .policy__list {
+  &__list {
     display: flex;
     justify-content: space-between;
     margin-bottom: 40px;
@@ -95,7 +95,7 @@
     }
   }
 
-  .policy__link {
+  &__link {
     padding-top: 16px;
     padding-bottom: 16px;
 
