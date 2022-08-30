@@ -62,17 +62,22 @@
 
   .nav {
     display: flex;
+    margin-top: -6px;
+    margin-bottom: 30px;
   }
+
   .nav__list {
       @media screen and (max-width: 767px) {
         display: flex;
+        gap: 0;
         flex-direction: column;
         margin-right: 81px;
       }
     }
 
     .nav__item {
-      outline: 1px solid red;
+      padding-top: 10px;
+      padding-bottom: 10px;
     }
 }
 
