@@ -28,44 +28,32 @@
     url('../images/offerings/apple-sm-ellipse-border.svg');
 
   @media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
     background-image: url('../images/offerings/apple-sm@2x.png'),
       url('../images/offerings/apple-shadow-sm@2x.png'),
       url('../images/offerings/apple-sm-ellipse-bg.svg'),
       url('../images/offerings/apple-sm-ellipse-border.svg');
   }
 
-  background-size: 201px,
-  128px,
-  255px,
-  280px;
+  background-size: 201px, 128px, 255px, 280px;
   background-repeat: no-repeat;
-  background-position: center -19px,
-  center 207px,
-  center 22px,
-  center 10px;
+  background-position: center -19px, center 207px, center 22px, center 10px;
 
   @media screen and (min-width: 768px) {
-    background-image: url('../images/offerings/apple-bg-md@1x.png'),
-      url('../images/offerings/apple-shadow-md@1x.png'),
-      url('../images/offerings/apple-md-ellipse-bg.svg'),
-      url('../images/offerings/apple-md-ellipse-border.svg'),
-      url('../images/offerings/apples-md@1x.png');
+    background-image: url('../images/offerings/apples-tablet@_1x.png'),
+      url('../images/offerings/apples-fon-tablet.svg');
 
     @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-      background-image: url('../images/offerings/apple-bg-md@2x.png'),
-        url('../images/offerings/apple-shadow-md@2x.png'),
-        url('../images/offerings/apple-md-ellipse-bg.svg'),
-        url('../images/offerings/apple-md-ellipse-border.svg'),
-        url('../images/offerings/apples-md@1x.png');
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/offerings/apples-tablet@_2x.png'),
+        url('../images/offerings/apples-fon-tablet.svg');
     }
 
-    background-size: 258px, 164px, 326px, 357px, 319px;
+    background-size: 651px 363px, 596px 357px;
     background-repeat: no-repeat;
-    background-position: 86px 55px, 133px 339px, 48px 103px, 32px 87px, 418px 50px;
+    background-position: 86px 50px, 32px 87px;
   }
 
   @media screen and (min-width: 1280px) {
@@ -75,23 +63,17 @@
       url('../images/offerings/apple-lg-ellipse-border.svg');
 
     @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
       background-image: url('../images/offerings/apple-lg@2x.png'),
         url('../images/offerings/apple-shadow-lg@2x.png'),
         url('../images/offerings/apple-lg-ellipse-bg.svg'),
         url('../images/offerings/apple-lg-ellipse-border.svg');
     }
 
-    background-size: 396px,
-    252px,
-    502px,
-    550px;
+    background-size: 396px, 252px, 502px, 550px;
     background-repeat: no-repeat;
-    background-position: 100px 77px,
-    171px 519px,
-    40px 155px,
-    16px 131px;
+    background-position: 100px 77px, 171px 519px, 40px 155px, 16px 131px;
     padding-bottom: 100px;
   }
 }
