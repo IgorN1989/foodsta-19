@@ -1,5 +1,8 @@
 .header {
-    
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
     padding-top: 10px;
     padding-bottom: 10px;
     box-shadow: var(--box-shadow);
@@ -8,8 +11,7 @@
 .header__container {
     display: flex;
     align-items: center;
-    position: fixed;
-    width: 100%;
+    position: relative;
 }
 
 .menu-button {
