@@ -60,35 +60,3 @@
     background-color: var(--button-green);
   }
 }
-
-.footer__top {
-  .nav {
-    display: flex;
-    position: relative;
-    top: -6px;
-    margin-bottom: 30px;
-
-    @media screen and (min-width: 768px) {
-      top: -14px;
-      left: -160px;
-    }
-
-    @media screen and (min-width: 1280px) {
-      left: -695px;
-    }
-  }
-
-  .nav__list {
-    @media screen and (max-width: 767px) {
-      display: flex;
-      gap: 0;
-      flex-direction: column;
-      margin-right: 81px;
-    }
-  }
-
-  .nav__item {
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-}
