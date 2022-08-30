@@ -3,7 +3,7 @@
   position: relative;
   top: - 43px;
   padding-top: 95px;
-  padding-bottom: 60px;
+  padding-bottom: 17px;
   background-image: url('../images/subscribe/banan@1x-desc.png');
 
   @media screen and (min-device-pixel-ratio: 2),
@@ -12,15 +12,19 @@
     background-image: url('../images/subscribe/banan@2x-mob.png');
   }
 
-  background-size: 161px 78px;
+  background-size: 161px;
   background-repeat: no-repeat;
   background-position: center top;
+  @media screen and (min-width:440px) and (max-width:767px){
+    top: - 70px;
+  }
+
 
   @media screen and (min-width:768px) {
     position: relative;
     top: - 74px;
     padding-top: 156px;
-    padding-bottom: 100px;
+    padding-bottom: 5px;
     background-image: url('../images/subscribe/banan@1x-tab.png');
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -29,7 +33,7 @@
       background-image: url('../images/subscribe/banan@2x-tab.png');
     }
 
-    background-size: 281px 136px;
+    background-size: 281px;
     background-position: top right 30px;
   }
     @media screen and (min-width:1280px) {
@@ -42,7 +46,7 @@
       screen and (min-resolution: 2dppx) {
         background-image: url('../images/subscribe/banan@2x-desc.png');
       }  
-      background-size: 608px 266px;
+      background-size: 608px;
       background-position: top right 20px;
     }
 }
@@ -76,9 +80,6 @@
   font-size: 14px;
   line-height: 150%;
 }
-.subscribe__box{
-  margin-bottom: 3px;
-}
 .subscribe__input {
   width: calc(100vw - 40px);
   max-width: 440px;
@@ -96,7 +97,7 @@
     color: var(--placeholder-color);
   }
     @media screen and (min-width: 768px){
-      margin: 0;
+      width: 395px;
     }
 }
 .subscribe__input:not(:placeholder-shown):required:valid {
