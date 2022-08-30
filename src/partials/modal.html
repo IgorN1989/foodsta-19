@@ -5,13 +5,13 @@
         <form autocomplete="on">
             <label class="modal__component" for="username">Name</label>
             <input class="modal__input-area" type="text" name="username" id="username" placeholder="Input your name"
-                autofocus required />
+                autofocus required minlength="3" maxlength="25" />
             <div class="modal__warning"><svg class="modal__icon-warning"></svg>
                 <p class="modal__hint"> The name must be between 3 and 25 characters</p>
             </div>
             <label class="modal__component" for="phone_number">Phone number</label>
             <input class="modal__input-area" type="tel" id="phone_number" name="phone_number"
-                placeholder="+38(0_ _) _ _ _   _ _   _ _" required />
+                placeholder="+38(0_ _) _ _ _   _ _   _ _" required minlength="9" maxlength="9" />
             <div class="modal__warning"><svg class="modal__icon-warning"></svg>
                 <p class="modal__hint"> This phone must be in the format 099 000 00 00</p>
             </div>
