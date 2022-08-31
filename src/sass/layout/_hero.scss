@@ -121,7 +121,10 @@
   }
 }
 
+// Cховав кнопки, так як слайдер не працює
+
 .swiper__button-right {
+  display: none;
   z-index: 10;
   position: absolute;
   padding: 0;
@@ -142,6 +145,7 @@
 }
 
 .swiper__button-left {
+  display: none;
   z-index: 10;
   position: absolute;
   padding: 0;
