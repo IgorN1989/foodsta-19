@@ -5,12 +5,6 @@
   box-shadow: var(--box-shadow);
 }
 
-.header .no-transparency {
-  background-color: rgba(94, 99, 99, 0.7);
-  backdrop-filter: blur(4px);
-  z-index: 20;
-}
-
 .header__container {
   display: flex;
   align-items: center;
@@ -19,7 +13,16 @@
   padding-bottom: 10px;
   padding-top: 11px;
   margin-top: -38px;
+  z-index: 20;
+ 
+  &.no-transparency {
+      background-color: rgba(94, 99, 99, 0.7);
+      backdrop-filter: blur(4px);
+      color: var(--yellow-main);
+      z-index: 20;
+    }
 }
+
 
 .menu-button {
   display: inline-flex;
@@ -33,6 +36,7 @@
     display: none;
   }
 }
+
 
 // Мобильное меню
 .menu-button.is-open .menu-button__icon--cross {
@@ -88,9 +92,4 @@
   position: absolute;
   top: 3%;
   right: 4%;
-}
-
-.header__container.no-transparency {
-  box-shadow: var(--box-shadow);
-color: var(--yellow-main);
 }
