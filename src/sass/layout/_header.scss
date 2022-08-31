@@ -6,6 +6,11 @@
     
 }
 
+.header .no-transparency {
+    background-color: rgb(0, 255, 255, 0.50);
+    backdrop-filter: blur(4px);
+}
+
 .header__container {
     display: flex;
     align-items: center;
