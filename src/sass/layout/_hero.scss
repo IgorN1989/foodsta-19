@@ -46,7 +46,6 @@
         font-size: 16px;
         margin-bottom: 40px;
     }
-
 }
 
 .hero__dishes {
@@ -60,17 +59,24 @@
 .dishes__list {
     display: flex;
     flex-wrap: wrap;
+    position: relative;
 }
 
 .dishes__item {
+
     display: flex;
-    align-items: center;
-    border: 16px solid yellow;
     justify-content: center;
+    align-items: center;
+    border: 14px solid var(--yellow-main);
     border-radius: 50%;
+
+    @media screen and (min-width: 1280px) {
+        border: 26px solid var(--yellow-main);
+    }
 }
 
 .hero__image {
+
     @media screen and (max-width: 767px) {
         width: 292px;
         height: 292px;
@@ -83,27 +89,27 @@
 }
 
 .swiper {
-  display: flex;
+    display: flex;
 }
 
 .swiper__control {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-left: auto;
 
-  @media screen and (min-width: 768px) {
-    gap: 142px;
-    left: 539px;
-    top: 165px;
-  }
+    @media screen and (min-width: 768px) {
+        gap: 142px;
+        left: 539px;
+        top: 165px;
+    }
 
-  @media screen and (min-width: 1280px) {
-    gap: 534px;
-    left: 657px;
-    top: 370px;
-  }
+    @media screen and (min-width: 1280px) {
+        gap: 534px;
+        left: 657px;
+        top: 370px;
+    }
 }
 
 
