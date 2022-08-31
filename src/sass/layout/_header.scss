@@ -14,15 +14,15 @@
   padding-top: 11px;
   margin-top: -38px;
   z-index: 20;
- 
-  &.no-transparency {
-      background-color: rgba(94, 99, 99, 0.7);
-      backdrop-filter: blur(4px);
-      color: var(--yellow-main);
-      z-index: 20;
-    }
-}
 
+  &.no-transparency {
+    background-image: linear-gradient(to bottom, rgba(94, 99, 99, 1), rgba(94, 99, 99, 0.1));
+    backdrop-filter: blur(6px);
+    color: var(--yellow-main);
+    z-index: 20;
+    fill: var(--button-green);
+  }
+}
 
 .menu-button {
   display: inline-flex;
@@ -32,11 +32,14 @@
   transition: fill var(--transition);
   z-index: 3;
 
+  &:hover, &:focus {
+    fill: var(--button-green-bright);
+  }
+
   @media screen and (min-width: 768px) {
     display: none;
   }
 }
-
 
 // Мобильное меню
 .menu-button.is-open .menu-button__icon--cross {
@@ -44,24 +47,29 @@
 }
 
 .mobile-menu {
-  display: none;
+  display: flex;
+  flex-direction: column;
   position: absolute;
   width: 125px;
   top: 65%;
   right: 4%;
   border-radius: 30px 0px 30px 30px;
   background-color: var(--white-color);
+  backdrop-filter: blur(4px);
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   color: var(--black-color);
   box-shadow: var(--box-shadow);
-  z-index:999;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--transition), visibility var(--transition);
 
   &.is-open {
-    display: flex;
-    flex-direction: column;
     z-index: 999;
+    opacity: 1;
+    visibility: visible;
   }
 }
 
@@ -69,23 +77,23 @@
   padding-left: 16px;
   padding-top: 16px;
   padding-bottom: 16px;
+  background-color: var(--white-color);
   z-index: 999;
   cursor: pointer;
+  transition: background-color var(--transition);
+}
+
+.menu__list .menu__item:first-child {
+  border-radius: 30px 0px 0px 0px;
+}
+
+.menu__list .menu__item:last-child {
+  border-radius: 0px 0px 30px 30px;
 }
 
 .menu__list :hover,
 .menu__list :focus {
   background: var(--button-green-bright);
-}
-
-.menu__list .menu__item:first-child:hover {
-  background: var(--button-green-bright);
-  border-radius: 30px 0px 0px 0px;
-}
-
-.menu__list .menu__item:last-child:hover {
-  background: var(--button-green-bright);
-  border-radius: 0px 0px 30px 30px;
 }
 
 .btn {
