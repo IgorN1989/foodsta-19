@@ -39,4 +39,62 @@
       </ul>
     </div>
   </div>
+  <!-- Slider main container -->
+  <div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper__wrapper">
+      <!-- Slides -->
+      <div class="swiper__slide"></div>
+      <div class="swiper__slide"></div>
+      <div class="swiper__slide"></div>
+    </div>
+    <div class="swiper__control">
+      <div class="swiper__button-prev">
+        <button class="swirer__button-left disabled" type="button">
+          <!-- <img src=".\images\images-slider\ep_arrow-up.png" alt="" /> -->
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset=".\images\images-slider\buuton-left-desktop.png"
+              type="image/png"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset=".\images\images-slider\buuton-left-table.png"
+              type="image/png"
+            />
+            <img
+              class="swiper-left"
+              src=".\images\images-slider\buuton-left-desktop.png"
+              alt="button-prev"
+            />
+          </picture>
+        </button>
+      </div>
+      <div class="swiper__button-next">
+        <button class="swiper__button-right active" type="button">
+          <!-- <img src=".\images\images-slider\ep_arrow-up-1.png" alt="" /> -->
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset=".\images\images-slider\buuton-right-desktop.png"
+              type="image/png"
+            />
+            <source
+              media="(min-width: 767px)"
+              srcset=".\images\images-slider\buuton-right-table.png"
+              type="image/png"
+            />
+            <img
+              class="swiper-right"
+              src=".\images\images-slider\buuton-right-desktop.png"
+              alt="button-prev"
+            />
+          </picture>
+        </button>
+      </div>
+    </div>
+
+    <div class="swiper-scrollbar"></div>
+  </div>
 </section>

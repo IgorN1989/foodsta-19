@@ -59,9 +59,11 @@
 .dishes__list {
   display: flex;
   flex-wrap: wrap;
+  position: relative;
 }
 
 .dishes__item {
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -74,6 +76,7 @@
 }
 
 .hero__image {
+
   @media screen and (max-width: 767px) {
     width: 292px;
     height: 292px;
@@ -84,3 +87,41 @@
     height: 528px;
   }
 }
+
+.swiper {
+  display: flex;
+}
+
+.swiper__control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin-left: auto;
+
+  @media screen and (min-width: 768px) {
+    gap: 142px;
+    left: 539px;
+    top: 165px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    gap: 534px;
+    left: 657px;
+    top: 370px;
+  }
+}
+
+
+
+// .swiper__button-prev {
+//   position: absolute;
+//   left: 770px;
+//   border: none;
+// }
+
+// .swiper__button-next {
+//   position: absolute;
+//   right: 144px;
+//   border: none;
+// }
