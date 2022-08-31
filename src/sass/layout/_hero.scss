@@ -13,7 +13,6 @@
 }
 
 .hero__container {
-    position: relative;
 
     @media screen and (min-width: 768px) {
         display: flex;
@@ -64,17 +63,19 @@
 
     @media screen and (min-width: 768px) {
         position: absolute;
-        top: 89px;
+        top: 260px;
         right: 40px;
     }
 
     @media screen and (min-width: 1280px) {
-        top: -147px;
+        top: 100px;
         right: 30px;
     }
 }
 
 .dishes__item {
+    position: relative;
+
     display: flex;
     width: 320px;
     height: 320px;
@@ -109,30 +110,58 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    margin-left: auto;
+
 
     @media screen and (min-width: 768px) {
-        gap: 130px;
         left: 539px;
         top: 165px;
     }
 
     @media screen and (min-width: 1280px) {
-        gap: 500px;
+
         left: 685px;
         top: 370px;
     }
 }
 
-.swirer__button-left {
+.swiper__button-right {
+    z-index: 100;
+    position: absolute;
     padding: 0;
     border: none;
     background-color: transparent;
+
+    left: 395px;
+    top: 400px;
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 1280px) {
+
+        left: 1220px;
+        top: 370px;
+    }
 }
 
-.swiper__button-right {
+.swiper__button-left {
+    z-index: 100;
+    position: absolute;
     padding: 0;
     border: none;
     background-color: transparent;
+
+    left: 695px;
+    top: 400px;
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 1280px) {
+
+        left: 655px;
+        top: 370px;
+    }
 }
