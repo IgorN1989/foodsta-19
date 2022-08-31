@@ -17,6 +17,9 @@
     align-items: center;
     position: fixed;
     width: 100%;
+    padding-bottom: 10px;
+    padding-top: 11px;
+    margin-top: -11px;
 }
 
 .menu-button {
@@ -50,6 +53,7 @@
     line-height: 19px;
     color: var(--black-color);
     box-shadow: var(--box-shadow);
+    z-index: 100;
     
 
 
