@@ -10,14 +10,15 @@
     background-size: 100%;
   }
 
-   @media screen and (min-width: 700px) and (max-width: 767px) {
-       padding-bottom: 65px;
-   }
+  @media screen and (min-width: 700px) and (max-width: 767px) {
+    padding-bottom: 65px;
+  }
 
   @media screen and (min-width: 768px) {
     padding-top: 60px;
     padding-bottom: 80px;
-    background-image: url('../images/icons/customers-background-tab.svg'), url('../images/icons/customers-background-tab.svg');
+    background-image: url('../images/icons/customers-background-tab.svg'),
+      url('../images/icons/customers-background-tab.svg');
     background-size: 100%, 100%;
     background-position: 0 -400px, bottom;
   }
@@ -55,7 +56,7 @@
   flex-wrap: wrap;
   padding: 52px 8px 8px 8px;
   max-width: 440px;
-  
+
   background-image: url('../images/icons/stars.svg'),
     url('../images/icons/feedback-bacground.svg'),
     url('../images/icons/feedback-bacground.svg'),
@@ -64,15 +65,14 @@
   background-repeat: no-repeat;
   background-position: 8px 8px, right, bottom, left;
 
-    @media screen and (min-width: 768px) {
-      padding: 56px 12px 12px 12px;
-      width: calc((100% - 32px) / 2);
-      
-    }
-    @media screen and (min-width: 1280px) {
-      padding: 58px 14px 14px 14px;
+  @media screen and (min-width: 768px) {
+    padding: 56px 12px 12px 12px;
+    width: calc((100% - 32px) / 2);
+  }
+  @media screen and (min-width: 1280px) {
+    padding: 58px 14px 14px 14px;
     max-width: 501px;
-    }
+  }
 }
 
 .customers__text {
