@@ -113,28 +113,26 @@
     margin-left: auto;
 
     @media screen and (min-width: 768px) {
-        gap: 142px;
+        gap: 130px;
         left: 539px;
         top: 165px;
     }
 
     @media screen and (min-width: 1280px) {
-        gap: 534px;
-        left: 657px;
+        gap: 500px;
+        left: 685px;
         top: 370px;
     }
 }
 
+.swirer__button-left {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
 
-
-// .swiper__button-prev {
-//   position: absolute;
-//   left: 770px;
-//   border: none;
-// }
-
-// .swiper__button-next {
-//   position: absolute;
-//   right: 144px;
-//   border: none;
-// }
+.swiper__button-right {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
