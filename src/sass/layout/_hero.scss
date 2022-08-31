@@ -83,39 +83,37 @@
 }
 
 .swiper {
-  display: flex;
+    display: flex;
 }
 
 .swiper__control {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-left: auto;
 
-  @media screen and (min-width: 768px) {
-    gap: 142px;
-    left: 539px;
-    top: 165px;
-  }
+    @media screen and (min-width: 768px) {
+        gap: 130px;
+        left: 539px;
+        top: 165px;
+    }
 
-  @media screen and (min-width: 1280px) {
-    gap: 534px;
-    left: 657px;
-    top: 370px;
-  }
+    @media screen and (min-width: 1280px) {
+        gap: 500px;
+        left: 685px;
+        top: 370px;
+    }
 }
 
+.swirer__button-left {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
 
-
-// .swiper__button-prev {
-//   position: absolute;
-//   left: 770px;
-//   border: none;
-// }
-
-// .swiper__button-next {
-//   position: absolute;
-//   right: 144px;
-//   border: none;
-// }
+.swiper__button-right {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}

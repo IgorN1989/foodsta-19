@@ -1,7 +1,7 @@
 <section class="hero section">
   <div class="container hero container">
     <div class="hero__box">
-      <h1 class="hero__title">Enjoy Your Favorite<br />Food From Anywhere</h1>
+      <h1 class="hero__title">Enjoy Your Favorite<br />Food From Anyw here</h1>
       <p class="hero__description">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
         varius enim in eros elementum tristique. Duis cursus, mi quis viverra
@@ -16,7 +16,7 @@
             <source
               media="(min-width: 1280px)"
               srcset="
-                ./images\images-slider\slider-1@1x-desktop.png 1x,
+                .\images\images-slider\slider-1@1x-desktop.png 1x,
                 .\images\images-slider\slider-1@2x-desktop.png 2x
               "
               type="image/png"
@@ -24,14 +24,14 @@
             <source
               media="(min-width: 768px)"
               srcset="
-                ./images/images-slider/slider-1@1x-tablet.png 1x,
-                ./images/images-slider/slider-1@2x-tablet.png 2x
+                .\images\images-slider\slider-1@1x-tablet.png 1x,
+                .\images\images-slider\slider-1@2x-tablet.png 2x
               "
               type="image/png"
             />
             <img
               class="hero__image"
-              src="./images/images-slider/slider-1@1x-desktop.png"
+              src=".\images\images-slider\slider-1@1x-desktop.png"
               alt="falafel with lavash and cream sauce"
             />
           </picture>
@@ -45,56 +45,94 @@
     <div class="swiper__wrapper">
       <!-- Slides -->
       <div class="swiper__slide"></div>
-      <div class="swiper__slide"></div>
-      <div class="swiper__slide"></div>
+      <div class="swiper__slide" hidden>
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              .\images\images-slider\slider-2@1x-desctop.png 1x,
+              .\images\images-slider\slider-2@2x-desctop.png 2x
+            "
+            type="image/png"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              .\images\images-slider\slider-2@1x-tablet.png 1x,
+              .\images\images-slider\slider-2@2x-tablet.png 2x
+            "
+            type="image/png"
+          />
+          <img
+            class="hero__image"
+            src=".\images\images-slider\slider-2@1x-desctop.png"
+            alt="falafel with lavash and cream sauce"
+          />
+        </picture>
+      </div>
+      <div class="swiper__slide" hidden>
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              .\images\images-slider\slider-3@1x-desktop.png 1x,
+              .\images\images-slider\slider-3@2x-desktop.png 2x
+            "
+            type="image/png"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              .\images\images-slider\slider-3@1x-tablet.png 1x,
+              .\images\images-slider\slider-3@2x-tablet.png 2x
+            "
+            type="image/png"
+          />
+          <img
+            class="hero__image"
+            src=".\images\images-slider\slider-3@1x-desktop.png"
+            alt="falafel with lavash and cream sauce"
+          />
+        </picture>
+      </div>
     </div>
+    <div class="swiper-pagination"></div>
     <div class="swiper__control">
       <div class="swiper__button-prev">
         <button class="swirer__button-left disabled" type="button">
-          <!-- <img src=".\images\images-slider\ep_arrow-up.png" alt="" /> -->
-          <picture>
-            <source
-              media="(min-width: 1280px)"
-              srcset=".\images\images-slider\buuton-left-desktop.png"
-              type="image/png"
-            />
-            <source
-              media="(min-width: 768px)"
-              srcset=".\images\images-slider\buuton-left-table.png"
-              type="image/png"
-            />
-            <img
-              class="swiper-left"
-              src=".\images\images-slider\buuton-left-desktop.png"
-              alt="button-prev"
-            />
-          </picture>
+          <a
+            class="swiper-left"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="left"
+          >
+            <svg class="swiper_icon" width="48" height="40">
+              <use
+                href=".\images\images-slider\symbol-defs.svg#slider-left"
+              ></use>
+            </svg>
+          </a>
         </button>
       </div>
       <div class="swiper__button-next">
         <button class="swiper__button-right active" type="button">
-          <!-- <img src=".\images\images-slider\ep_arrow-up-1.png" alt="" /> -->
-          <picture>
-            <source
-              media="(min-width: 1280px)"
-              srcset=".\images\images-slider\buuton-right-desktop.png"
-              type="image/png"
-            />
-            <source
-              media="(min-width: 767px)"
-              srcset=".\images\images-slider\buuton-right-table.png"
-              type="image/png"
-            />
-            <img
-              class="swiper-right"
-              src=".\images\images-slider\buuton-right-desktop.png"
-              alt="button-prev"
-            />
-          </picture>
+          <a
+            class="swiper-right"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="right"
+          >
+            <svg class="swiper_icon" width="48" height="40">
+              <use
+                href=".\images\images-slider\symbol-defs.svg#slider-right"
+              ></use>
+            </svg>
+          </a>
         </button>
       </div>
     </div>
-
     <div class="swiper-scrollbar"></div>
   </div>
 </section>
