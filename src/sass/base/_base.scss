@@ -9,3 +9,7 @@ body {
 .no-scroll {
   overflow: hidden;
 }
+
+html {
+  scroll-behavior: smooth;
+}
