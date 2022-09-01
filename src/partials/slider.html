@@ -1,11 +1,84 @@
-.swiper { display: flex; } .swiper__control { display: flex; align-items:
-center; justify-content: center; @media screen and (min-width: 768px) { left:
-539px; top: 165px; } @media screen and (min-width: 1280px) { left: 685px; top:
-370px; } } // Cховав кнопки, так як слайдер не працює .swiper__button-right {
-display: none; z-index: 10; position: absolute; padding: 0; border: none;
-background-color: transparent; left: 395px; top: 400px; @media screen and
-(max-width: 767px) { display: none; } @media screen and (min-width: 1280px) {
-left: 1220px; top: 370px; } } .swiper__button-left { display: none; z-index: 10;
-position: absolute; padding: 0; border: none; background-color: transparent;
-left: 695px; top: 400px; @media screen and (max-width: 767px) { display: none; }
-@media screen and (min-width: 1280px) { left: 655px; top: 370px; } }
+<!-- Slider main container -->
+  <div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper__wrapper">
+      <!-- Slides -->
+      <div class="swiper__slide"></div>
+      <div class="swiper__slide" hidden>
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              ./images/images-slider/slider-2@1x-desctop.png 1x,
+              ./images/images-slider/slider-2@2x-desctop.png 2x
+            "
+            type="image/png"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/images-slider/slider-2@1x-tablet.png 1x,
+              ./images/images-slider/slider-2@2x-tablet.png 2x
+            "
+            type="image/png"
+          />
+          <img
+            class="hero__image"
+            src="./images/images-slider/slider-2@1x-desctop.png"
+            alt="falafel with lavash and cream sauce"
+          />
+        </picture>
+      </div>
+      <div class="swiper__slide" hidden>
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              ./images/images-slider/slider-3@1x-desktop.png 1x,
+              ./images/images-slider/slider-3@2x-desktop.png 2x
+            "
+            type="image/png"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/images-slider/slider-3@1x-tablet.png 1x,
+              ./images/images-slider/slider-3@2x-tablet.png 2x
+            "
+            type="image/png"
+          />
+          <img
+            class="hero__image"
+            src="./images/images-slider/slider-3@1x-desktop.png"
+            alt="falafel with lavash and cream sauce"
+          />
+        </picture>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper__control">
+      <div class="swiper__button-prev">
+        <a class="swiper-right" href="#" aria-label="right"></a>
+        <button class="swiper__button-right" type="button">
+          <svg class="swiper_icon" width="48" height="40">
+              <use
+                href="./images/images-slider/symbol-defs.svg#slider-right"
+              ></use>
+            </svg>
+          </button>
+        </a>
+      </div>
+      <div class="swiper__button-next">
+        <a class="swiper-left" href="#" aria-label="left"></a>
+        <button class="swiper__button-left active" type="button">
+          <svg class="swiper_icon" width="48" height="40">
+              <use
+                href="./images/images-slider/symbol-defs.svg#slider-left"
+              ></use>
+            </svg>
+          </button>
+          </a>
+      </div>
+    </div>
+    <div class="swiper-scrollbar"></div>
+  </div>
