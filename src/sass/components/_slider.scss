@@ -1,0 +1,108 @@
+.hero__dishes {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 768px) {
+        position: absolute;
+        top: 89px;
+        right: 40px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        top: -147px;
+        right: 30px;
+    }
+}
+
+.dishes__item {
+    position: relative;
+    display: flex;
+    width: 320px;
+    height: 320px;
+    align-items: center;
+    justify-content: center;
+    border: 16px solid var(--yellow-main);
+    border-radius: 50%;
+
+    @media screen and (min-width: 1280px) {
+        width: 580px;
+        height: 580px;
+    }
+}
+
+.hero__image {
+    @media screen and (max-width: 767px) {
+        width: 292px;
+        height: 292px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 528px;
+        height: 528px;
+    }
+}
+
+.swiper {
+    display: flex;
+}
+
+.swiper__control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (min-width: 768px) {
+        left: 539px;
+        top: 165px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        left: 685px;
+        top: 370px;
+    }
+}
+
+// Cховав кнопки, так як слайдер не працює
+
+.swiper__button-right {
+    display: none;
+    z-index: 10;
+    position: absolute;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+
+    left: 395px;
+    top: 400px;
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 1280px) {
+        left: 1220px;
+        top: 370px;
+    }
+}
+
+.swiper__button-left {
+    display: none;
+    z-index: 10;
+    position: absolute;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+
+    left: 695px;
+    top: 400px;
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 1280px) {
+        left: 655px;
+        top: 370px;
+    }
+}
