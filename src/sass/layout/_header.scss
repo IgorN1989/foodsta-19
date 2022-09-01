@@ -16,7 +16,11 @@
   z-index: 20;
 
   &.no-transparency {
-    background-image: linear-gradient(to bottom, rgba(94, 99, 99, 1), rgba(94, 99, 99, 0.1));
+    background-image: linear-gradient(
+      to bottom,
+      rgba(94, 99, 99, 1),
+      rgba(94, 99, 99, 0.1)
+    );
     backdrop-filter: blur(6px);
     color: var(--yellow-main);
     z-index: 20;
@@ -32,7 +36,8 @@
   transition: fill var(--transition);
   z-index: 3;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     fill: var(--button-green-bright);
   }
 
@@ -73,10 +78,11 @@
   }
 }
 
+.menu-button__icon--cross {
+  fill: var(--main-text-color);
+}
+
 .menu__item {
-  padding-left: 16px;
-  padding-top: 16px;
-  padding-bottom: 16px;
   background-color: var(--white-color);
   z-index: 999;
   cursor: pointer;
@@ -91,13 +97,32 @@
   border-radius: 0px 0px 30px 30px;
 }
 
-.menu__list :hover,
-.menu__list :focus {
-  background: var(--button-green-bright);
-}
-
 .btn {
   position: absolute;
   top: 3%;
   right: 4%;
+}
+
+.menu__link {
+  display: block;
+  padding-left: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: var(--white-color);
+  z-index: 200;
+  cursor: pointer;
+  transition: background-color var(--transition);
+
+  &:hover,
+  &:focus {
+    background: var(--button-green-bright);
+  }
+}
+
+.menu__link.first-item {
+  border-radius: 30px 0px 0px 0px;
+}
+
+.menu__link.last-item {
+  border-radius: 0px 0px 30px 30px;
 }
